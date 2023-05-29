@@ -1,6 +1,6 @@
 body{
     background-color: rgb(244, 231, 216);
-    width: 700px;
+    max-width: 800px;
     margin: auto;
 }
 h1 {
@@ -14,21 +14,34 @@ border-radius: 6px;
 padding: 10px;
 }
 p {
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
     border-radius: 4px;
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
 }
+.container {
+    box-shadow: 1px 1px 22px 8px rgba(0, 0, 0, 0.42);
+    margin: 20px 20px;
+    padding: 5px 40px;
+    color: #000;
+    max-width: 600px;
+    border-radius: 9px;
+    font-family: "Cerbri sans", Arial, Helvetica, sans-serif;
+}
 .links {
     display: flex;
     margin-top: 40px;
     color: rgb(86, 52, 1);
+    margin-bottom: 30px;
 }
 .centredlinks{
     justify-content: center;
     font-size: 25px;
+}
+.centred {
+text-align: center;
 }
 .links:hover {
     text-decoration: underline;
@@ -51,10 +64,31 @@ p {
     padding: 20px 15px;
     text-decoration: none;
     text-transform: capitalize;
+    margin-bottom: 30px;
 }
 
 .contact-link {
     background: rgb(244, 154, 70);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     color: white;
+    }
+@media (max-width:800px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 14px;
+        opacity: 0.7;
+    }
+    p {
+        padding: 10px;
+        margin: 5px;
+        font-size: 10px;
+        line-height: 1;
+    }
 }
