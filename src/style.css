@@ -23,8 +23,8 @@ p {
 }
 .container {
     box-shadow: 1px 1px 22px 8px rgba(0, 0, 0, 0.42);
-    margin: 20px 20px;
-    padding: 5px 40px;
+    margin: 20px 50px;
+    padding: 5px 50px;
     color: #000;
     max-width: 600px;
     border-radius: 9px;
