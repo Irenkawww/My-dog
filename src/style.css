@@ -40,6 +40,7 @@ p {
    .space :hover{
     text-decoration: none;
     color: rgb(154, 92, 1);
+    font-size: 25px;
    }
 .space {
     display: block;
