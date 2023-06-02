@@ -2,6 +2,7 @@
     --background-color:rgb(244, 231, 216);
     --dark-color: rgb(154, 92, 1);
     --background-darker-color: rgb(244, 154, 70);
+    --background-dark-light-color: rgb(250, 218, 188);
     --border-color: rgb(61, 33, 1);
     --heading-font-family:'Alfa Slab One', cursive;
     --paragraf-font-family: 'Acme', sans-serif;
@@ -9,33 +10,56 @@
     --button-shadow:0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-body{
+body {
     background-color: var(--background-color);
     margin: 30px 30px;
     padding: 30px 30px;
    }
 h1 {
-    padding-top: 20px;
+    padding: 10px;
     text-align: center;
     font-family: var(--heading-font-family);
 }
+h2 {
+    text-align: center;
+    font-family: var(--heading-font-family);
+}
+h3{
+    font-family: var(--paragraf-font-family);
+    font-size: 30px;
+    color: var(--border-color);
+}
 img {
-display: block;
-margin: auto;
-border: solid 2px var(--border-color);
-border-radius: 6px;
-padding: 10px;
+  display: block;
+  margin: 20px auto;
+  border: solid 2px var(--border-color);
+  border-radius: 6px;
+  padding: 10px;
 }
 p {
-    padding: 15px;
-    margin: 15px;
+    margin: 0px 35px 0px 35px;
     font-size: 18px;
-    text-align: center;
     font-family:var(--paragraf-font-family);
+    line-height: 30px;
+    text-align: left;
 }
+li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--border-color);
+   }
+.linkwikipedia {
+    color: var(--dark-color);
+    font-family: var(--paragraf-font-family);
+   }
+.linkwikipedia :hover {
+    text-decoration: none;
+    color: var(--background-darker-color);
+   }
 .page {
     box-shadow: var(--box-shadow);
-    color: #000;
+    color: black;
     max-width: 700px;
     margin: 0px 0px;
     padding: 0px 0px;
@@ -47,14 +71,14 @@ p {
     color:black;
     font-family: var(--paragraf-font-family);
    }
-   .space :hover{
+.space :hover{
     text-decoration: none;
     color: var(--dark-color);
-    font-size: 25px;
-   }
+       }
 .space {
     display: block;
     margin: 50px auto;
+    font-size: 25px;
   }
 .links {
 display: block;
@@ -80,6 +104,13 @@ margin-bottom: 40px;
  .rowphotos {
    display: flex;
    justify-content: center;
+   margin-bottom: 20px;
+}
+.section {
+    background-color: var(--background-dark-light-color);
+    display: flex;
+    margin: auto;
+    
 }
 @media (max-width:800px) {
     h1 {
@@ -95,10 +126,9 @@ margin-bottom: 40px;
         opacity: 0.7;
     }
     p {
-        padding: 10px;
-        margin: 5px;
+        margin: 0px 15px 0px 15px;
         font-size: 10px;
-        line-height: 1;
+        line-height: 1.5;
     }
     .links {
     font-size: 10px;
