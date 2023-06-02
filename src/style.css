@@ -2,7 +2,7 @@
     --background-color:rgb(244, 231, 216);
     --dark-color: rgb(154, 92, 1);
     --background-darker-color: rgb(244, 154, 70);
-    --background-dark-light-color: rgb(250, 218, 188);
+    --background-dark-light-color: rgb(255, 234, 214);
     --border-color: rgb(61, 33, 1);
     --heading-font-family:'Alfa Slab One', cursive;
     --paragraf-font-family: 'Acme', sans-serif;
@@ -101,13 +101,26 @@ margin-bottom: 40px;
   background:var(--dark-color);
 }
  .section {
-    background-color: var(--background-dark-light-color);
     display: flex;
-    margin: auto;
-    }
+    margin: 25px auto;
+    padding: 15px;
+    background-color: var(--background-dark-light-color);
+    border-radius: 25px;
+  }
 .image {
     max-width: 100%;
     height: auto;
+}
+.header{
+    font-family: var(--paragraf-font-family);
+    font-size: 30px;
+    color: var(--border-color);
+    }
+.paragraph {
+    font-size: 20px;
+    font-family: var(--paragraf-font-family);
+    line-height: 30px;
+    text-align: left;
 }
 @media (max-width:800px) {
     h1 {
