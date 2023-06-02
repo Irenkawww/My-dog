@@ -100,21 +100,18 @@ margin-bottom: 40px;
   text-decoration: none;
   background:var(--dark-color);
 }
-
- .rowphotos {
-   display: flex;
-   justify-content: center;
-   margin-bottom: 20px;
-}
-.section {
+ .section {
     background-color: var(--background-dark-light-color);
     display: flex;
     margin: auto;
-    
+    }
+.image {
+    max-width: 100%;
+    height: auto;
 }
 @media (max-width:800px) {
     h1 {
-        font-size: 36px;
+        font-size: 26px;
     }
 
     h2 {
@@ -127,7 +124,7 @@ margin-bottom: 40px;
     }
     p {
         margin: 0px 15px 0px 15px;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.5;
     }
     .links {
