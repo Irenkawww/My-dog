@@ -1,17 +1,28 @@
+:root{
+    --background-color:rgb(244, 231, 216);
+    --dark-color: rgb(154, 92, 1);
+    --background-darker-color: rgb(244, 154, 70);
+    --border-color: rgb(61, 33, 1);
+    --heading-font-family:'Alfa Slab One', cursive;
+    --paragraf-font-family: 'Acme', sans-serif;
+    --box-shadow: 1px 1px 22px 8px rgba(0, 0, 0, 0.5);
+    --button-shadow:0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 body{
-    background-color: rgb(244, 231, 216);
+    background-color: var(--background-color);
     margin: 30px 30px;
     padding: 30px 30px;
    }
 h1 {
     padding-top: 20px;
     text-align: center;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: var(--heading-font-family);
 }
 img {
 display: block;
 margin: auto;
-border: solid 2px rgb(61, 33, 1);
+border: solid 2px var(--border-color);
 border-radius: 6px;
 padding: 10px;
 }
@@ -20,26 +31,25 @@ p {
     margin: 15px;
     font-size: 18px;
     text-align: center;
-    font-family: 'Acme', sans-serif;
+    font-family:var(--paragraf-font-family);
 }
 .page {
-    box-shadow: 1px 1px 22px 8px rgba(0, 0, 0, 0.42);
+    box-shadow: var(--box-shadow);
     color: #000;
     max-width: 700px;
     margin: 0px 0px;
     padding: 0px 0px;
     border-radius: 9px;
-    font-family: "Cerbri sans", Arial, Helvetica, sans-serif;
 }
 .contactmelink {
     justify-content: center;
     font-size: 25px;
     color:black;
-    font-family: 'Acme', sans-serif;
+    font-family: var(--paragraf-font-family);
    }
    .space :hover{
     text-decoration: none;
-    color: rgb(154, 92, 1);
+    color: var(--dark-color);
     font-size: 25px;
    }
 .space {
@@ -57,14 +67,14 @@ margin-bottom: 40px;
     border-radius: 4px;
     padding: 10px 10px;
     text-decoration: none;
-    background: rgb(244, 154, 70);
+    background: var(--background-darker-color);
     color: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    font-family: 'Acme', sans-serif;
+    box-shadow: var(--button-shadow);
+    font-family: var(--paragraf-font-family);
 }
 .navigation-links :hover {
   text-decoration: none;
-  background:rgb(154, 92, 1) ;
+  background:var(--dark-color);
 }
 
  .rowphotos {
