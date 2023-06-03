@@ -122,6 +122,12 @@ margin-bottom: 40px;
     line-height: 30px;
     text-align: left;
 }
+.list {
+    margin-left: 50px;
+    font-size: 34px;
+    opacity: 50%;
+    font-family: var(--heading-font-family);
+}
 @media (max-width:800px) {
     h1 {
         font-size: 26px;
